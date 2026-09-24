@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maximiliano Ide · Software Engineer</title>
+  <meta name="description" content="Maximiliano Ide — Software Engineer at Modyo, based in Valdivia, Chile. Ruby on Rails, Hotwire and React for CRM/CMS platforms and financial products.">
+  <meta name="author" content="Maximiliano Ide">
+  <meta name="theme-color" content="#0a1a3f">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://maximilianoide.github.io/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Maximiliano Ide · Software Engineer">
+  <meta property="og:description" content="Software Engineer at Modyo, based in Valdivia, Chile. Ruby on Rails, Hotwire and React.">
+  <meta property="og:url" content="https://maximilianoide.github.io/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/43627780?v=4">
+  <meta property="og:image:alt" content="Maximiliano Ide">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_CL">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="nav.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#stage">
+    <span lang="en">Skip to content</span><span lang="es">Saltar al contenido</span>
+  </a>
+
+  <!-- Intro (< 2 s, decorative, never blocks input) -->
+  <div class="intro" aria-hidden="true">
+    <span class="intro__slash"></span>
+    <span class="intro__name">Maximiliano Ide</span>
+    <span class="intro__role">Software Engineer</span>
+  </div>
+
+  <!-- Background: swirl, light rays, bubbles, grain, scanlines -->
+  <div class="sea" aria-hidden="true">
+    <div class="sea__caustics"></div>
+    <div class="sea__swirl"></div>
+    <div class="sea__name">Maximiliano Ide</div>
+    <div class="sea__rays sea__rays--a"></div>
+    <div class="bubbles">
+      <i style="--x:4%;  --s:.5; --d:13s; --t:-1s"></i>
+      <i style="--x:11%; --s:1;  --d:19s; --t:-9s"></i>
+      <i style="--x:19%; --s:.4; --d:11s; --t:-4s"></i>
+      <i style="--x:27%; --s:.8; --d:17s; --t:-12s"></i>
+      <i style="--x:36%; --s:.3; --d:10s; --t:-6s"></i>
+      <i style="--x:44%; --s:.6; --d:15s; --t:-2s"></i>
+      <i style="--x:53%; --s:1.2;--d:22s; --t:-15s"></i>
+      <i style="--x:61%; --s:.4; --d:12s; --t:-8s"></i>
+      <i style="--x:69%; --s:.7; --d:16s; --t:-3s"></i>
+      <i style="--x:77%; --s:.35;--d:10s; --t:-7s"></i>
+      <i style="--x:84%; --s:.9; --d:20s; --t:-11s"></i>
+      <i style="--x:91%; --s:.5; --d:14s; --t:-5s"></i>
+      <i style="--x:97%; --s:.3; --d:11s; --t:-10s"></i>
+    </div>
+    <div class="grain"></div>
+    <div class="scan"></div>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#status">
+        <img class="brand__avatar" src="https://avatars.githubusercontent.com/u/43627780?v=4" alt="" width="96" height="96">
+        <div class="brand__text">
+          <h1 class="brand__name">Maximiliano Ide</h1>
+          <span class="brand__role">Software Engineer</span>
+        </div>
+      </a>
+
+      <div class="hud">
+        <p class="clock">
+          <span class="moon" aria-hidden="true"></span>
+          <span class="clock__place">Valdivia, CL</span>
+          <span class="clock__tz">GMT-4</span>
+        </p>
+
+        <fieldset class="lang-switch">
+          <legend class="lang-switch__legend">
+            <span lang="en">Language</span><span lang="es">Idioma</span>
+          </legend>
+          <input class="lang-switch__input" type="radio" name="lang" id="lang-en" value="en" checked>
+          <label class="lang-switch__label" for="lang-en"><abbr title="English">EN</abbr></label>
+          <input class="lang-switch__input" type="radio" name="lang" id="lang-es" value="es">
+          <label class="lang-switch__label" for="lang-es"><abbr title="Español">ES</abbr></label>
+        </fieldset>
+      </div>
+    </header>
+
+    <nav class="menu" id="menu" aria-label="Main menu">
+      <ol class="menu__list">
+        <li class="menu__item" style="--i:0">
+          <a class="menu__link" href="#status">
+            <span class="menu__bar" aria-hidden="true"></span>
+            <span class="menu__label" data-label="Status">Status</span>
+            <span class="menu__hint"><span lang="en">Profile</span><span lang="es">Perfil</span></span>
+          </a>
+        </li>
+        <li class="menu__item" style="--i:1">
+          <a class="menu__link" href="#skills">
+            <span class="menu__bar" aria-hidden="true"></span>
+            <span class="menu__label" data-label="Skills">Skills</span>
+            <span class="menu__hint"><span lang="en">Tech stack</span><span lang="es">Stack técnico</span></span>
+          </a>
+        </li>
+        <li class="menu__item" style="--i:2">
+          <a class="menu__link" href="#quests">
+            <span class="menu__bar" aria-hidden="true"></span>
+            <span class="menu__label" data-label="Quests">Quests</span>
+            <span class="menu__hint"><span lang="en">Public repos</span><span lang="es">Repos públicos</span></span>
+          </a>
+        </li>
+        <li class="menu__item" style="--i:3">
+          <a class="menu__link" href="#social-link">
+            <span class="menu__bar" aria-hidden="true"></span>
+            <span class="menu__label" data-label="Social Link">Social Link</span>
+            <span class="menu__hint"><span lang="en">Experience &amp; education</span><span lang="es">Experiencia y educación</span></span>
+          </a>
+        </li>
+        <li class="menu__item" style="--i:4">
+          <a class="menu__link" href="#achievements">
+            <span class="menu__bar" aria-hidden="true"></span>
+            <span class="menu__label" data-label="Achievements">Achievements</span>
+            <span class="menu__hint"><span lang="en">Trophy case</span><span lang="es">Vitrina de trofeos</span></span>
+          </a>
+        </li>
+        <li class="menu__item" style="--i:5">
+          <a class="menu__link" href="#contact">
+            <span class="menu__bar" aria-hidden="true"></span>
+            <span class="menu__label" data-label="Contact">Contact</span>
+            <span class="menu__hint"><span lang="en">Get in touch</span><span lang="es">Escríbeme</span></span>
+          </a>
+        </li>
+      </ol>
+    </nav>
+
+    <main class="stage" id="stage">
+
+      <!-- ================= STATUS ================= -->
+      <section class="panel" id="status" aria-labelledby="status-title">
+        <header class="panel__head">
+          <p class="panel__index" aria-hidden="true">01</p>
+          <h2 class="panel__title" id="status-title" data-echo="Status">Status</h2>
+          <p class="panel__sub"><span lang="en">Character profile</span><span lang="es">Ficha de personaje</span></p>
+        </header>
+
+        <div class="panel__body">
+          <div class="profile">
+            <figure class="portrait">
+              <img src="https://avatars.githubusercontent.com/u/43627780?v=4" alt="Portrait of Maximiliano Ide" width="460" height="460">
+              <figcaption class="portrait__plate">Maximiliano Ide</figcaption>
+            </figure>
+
+            <div class="profile__info stagger">
+              <p class="profile__role">
+                <span lang="en">Software Engineer at Modyo</span>
+                <span lang="es">Software Engineer en Modyo</span>
+              </p>
+              <p class="profile__place">Valdivia, Chile · GMT-4</p>
+              <p class="profile__summary" lang="en">Linux enthusiast since I was 14. I'm drawn to interesting technical challenges, to building simple, useful products, and to using and adopting agentic AI in how software gets built.</p>
+              <p class="profile__summary" lang="es">Apasionado por Linux desde los 14 años. Me motivan los desafíos técnicos interesantes, crear productos simples y útiles, y usar y adoptar la IA agéntica en la forma de construir software.</p>
+            </div>
+          </div>
+
+          <section class="block" aria-labelledby="about-title">
+            <h3 class="block__title" id="about-title"><span lang="en">About me</span><span lang="es">Sobre mí</span></h3>
+            <ul class="interests stagger" role="list">
+              <li class="interest" data-icon="beer"><span class="interest__icon" aria-hidden="true"></span><span lang="en">Beer</span><span lang="es">Cerveza</span></li>
+              <li class="interest" data-icon="music"><span class="interest__icon" aria-hidden="true"></span><span lang="en">Playing music — guitar and piano</span><span lang="es">Tocar música — guitarra y piano</span></li>
+              <li class="interest" data-icon="games"><span class="interest__icon" aria-hidden="true"></span><span lang="en">Video games — former competitive League of Legends and Valorant player</span><span lang="es">Videojuegos — fui jugador competitivo de League of Legends y Valorant</span></li>
+              <li class="interest" data-icon="combat"><span class="interest__icon" aria-hidden="true"></span><span lang="en">Combat sports</span><span lang="es">Deportes de combate</span></li>
+            </ul>
+          </section>
+
+          <section class="block" aria-labelledby="lang-title">
+            <h3 class="block__title" id="lang-title"><span lang="en">Language stats</span><span lang="es">Stats de idiomas</span></h3>
+            <ul class="stats stagger" role="list">
+              <li class="stat">
+                <span class="stat__name"><span lang="en">Spanish</span><span lang="es">Español</span></span>
+                <span class="stat__gauge" aria-hidden="true"></span>
+                <span class="stat__rank"><span lang="en">Native</span><span lang="es">Nativo</span></span>
+              </li>
+              <li class="stat">
+                <span class="stat__name"><span lang="en">English</span><span lang="es">Inglés</span></span>
+                <span class="stat__gauge" aria-hidden="true"></span>
+                <span class="stat__rank">C2 · EF SET Proficient</span>
+              </li>
+              <li class="stat">
+                <span class="stat__name"><span lang="en">Portuguese</span><span lang="es">Portugués</span></span>
+                <span class="stat__gauge" aria-hidden="true"></span>
+                <span class="stat__rank"><span lang="en">Competent</span><span lang="es">Competente</span></span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+      <section class="panel" id="skills" aria-labelledby="skills-title">
+        <header class="panel__head">
+          <p class="panel__index" aria-hidden="true">02</p>
+          <h2 class="panel__title" id="skills-title" data-echo="Skills">Skills</h2>
+          <p class="panel__sub"><span lang="en">Learned techniques</span><span lang="es">Técnicas aprendidas</span></p>
+        </header>
+
+        <div class="panel__body">
+          <div class="skill-tree stagger">
+            <section class="skill-group" data-group="backend" aria-labelledby="sk-back">
+              <h3 class="skill-group__title" id="sk-back">Backend</h3>
+              <ul class="skills" role="list">
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">Ruby</span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">Ruby on Rails</span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">SQL</span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">Redis</span></span></li>
+              </ul>
+            </section>
+
+            <section class="skill-group" data-group="frontend" aria-labelledby="sk-front">
+              <h3 class="skill-group__title" id="sk-front">Frontend</h3>
+              <ul class="skills" role="list">
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">JavaScript</span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">React</span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">Hotwire <small>(Turbo + Stimulus)</small></span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">HTML</span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">CSS</span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">Liquid</span></span></li>
+              </ul>
+            </section>
+
+            <section class="skill-group" data-group="tools" aria-labelledby="sk-tools">
+              <h3 class="skill-group__title" id="sk-tools">Tools</h3>
+              <ul class="skills" role="list">
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">Git</span></span></li>
+              </ul>
+            </section>
+
+            <section class="skill-group" data-group="side" aria-labelledby="sk-side">
+              <h3 class="skill-group__title" id="sk-side">Side projects</h3>
+              <ul class="skills" role="list">
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">C++</span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">Shell</span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">Rust</span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">Go</span></span></li>
+              </ul>
+            </section>
+
+            <section class="skill-group" data-group="ai" aria-labelledby="sk-ai">
+              <h3 class="skill-group__title" id="sk-ai"><span lang="en">Agentic AI</span><span lang="es">IA agéntica</span></h3>
+              <ul class="skills" role="list">
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">Pi</span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name">Herdr</span></span></li>
+                <li class="skill"><span class="skill__card"><span class="skill__glyph" aria-hidden="true"></span><span class="skill__name"><span lang="en">Open-source models</span><span lang="es">Modelos open source</span></span></span></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= QUESTS ================= -->
+      <section class="panel" id="quests" aria-labelledby="quests-title">
+        <header class="panel__head">
+          <p class="panel__index" aria-hidden="true">03</p>
+          <h2 class="panel__title" id="quests-title" data-echo="Quests">Quests</h2>
+          <p class="panel__sub">
+            <span lang="en">3 public repositories · 11 followers on GitHub</span>
+            <span lang="es">3 repositorios públicos · 11 seguidores en GitHub</span>
+          </p>
+        </header>
+
+        <div class="panel__body">
+          <ul class="quests stagger" role="list">
+            <li class="quest quest--main">
+              <article class="quest__card">
+                <p class="quest__tags">
+                  <span class="tag tag--gold"><span lang="en">Main quest</span><span lang="es">Misión principal</span></span>
+                  <span class="tag tag--live">In progress</span>
+                </p>
+                <h3 class="quest__name">
+                  <a href="https://github.com/maximilianoide/sin-punishment-recompiled" rel="noopener" target="_blank">sin-punishment-recompiled</a>
+                </h3>
+                <p class="quest__desc" lang="en">Work-in-progress native PC port of Treasure's Sin &amp; Punishment via N64Recomp and RT64.</p>
+                <p class="quest__desc" lang="es">Port nativo para PC, en desarrollo, de Sin &amp; Punishment de Treasure mediante N64Recomp y RT64.</p>
+                <p class="quest__meta">
+                  <span class="quest__lang" data-lang="cpp">C++</span>
+                  <span class="quest__stars"><span aria-hidden="true">★</span> 2 <span class="sr-only"><span lang="en">stars</span><span lang="es">estrellas</span></span></span>
+                </p>
+              </article>
+            </li>
+
+            <li class="quest">
+              <article class="quest__card">
+                <p class="quest__tags">
+                  <span class="tag"><span lang="en">Side quest</span><span lang="es">Misión secundaria</span></span>
+                </p>
+                <h3 class="quest__name">
+                  <a href="https://github.com/maximilianoide/aoc-templates" rel="noopener" target="_blank">aoc-templates</a>
+                </h3>
+                <p class="quest__desc" lang="en">Templates for Advent of Code.</p>
+                <p class="quest__desc" lang="es">Plantillas para Advent of Code.</p>
+                <p class="quest__meta">
+                  <span class="quest__lang" data-lang="ruby">Ruby</span>
+                  <span class="quest__stars"><span aria-hidden="true">★</span> 1 <span class="sr-only"><span lang="en">star</span><span lang="es">estrella</span></span></span>
+                </p>
+              </article>
+            </li>
+
+            <li class="quest">
+              <article class="quest__card">
+                <p class="quest__tags">
+                  <span class="tag"><span lang="en">Side quest</span><span lang="es">Misión secundaria</span></span>
+                  <span class="tag tag--fork">Fork</span>
+                </p>
+                <h3 class="quest__name">
+                  <a href="https://github.com/maximilianoide/superpowers-ruby" rel="noopener" target="_blank">superpowers-ruby</a>
+                </h3>
+                <p class="quest__desc" lang="en">Claude Code superpowers: core skills library for Ruby and Ruby on Rails projects.</p>
+                <p class="quest__desc" lang="es">Superpowers para Claude Code: librería base de skills para proyectos Ruby y Ruby on Rails.</p>
+                <p class="quest__fork">
+                  <span lang="en">Forked from</span><span lang="es">Fork de</span>
+                  <a href="https://github.com/lucianghinda/superpowers-ruby" rel="noopener" target="_blank">lucianghinda/superpowers-ruby</a>
+                </p>
+                <p class="quest__meta">
+                  <span class="quest__lang" data-lang="shell">Shell</span>
+                  <span class="quest__stars"><span aria-hidden="true">★</span> 0 <span class="sr-only"><span lang="en">stars</span><span lang="es">estrellas</span></span></span>
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= SOCIAL LINK ================= -->
+      <section class="panel" id="social-link" aria-labelledby="social-title">
+        <header class="panel__head">
+          <p class="panel__index" aria-hidden="true">04</p>
+          <h2 class="panel__title" id="social-title" data-echo="Social Link">Social Link</h2>
+          <p class="panel__sub"><span lang="en">Experience &amp; education</span><span lang="es">Experiencia y educación</span></p>
+        </header>
+
+        <div class="panel__body">
+          <article class="bond">
+            <header class="bond__head">
+              <p class="quest__tags">
+                <span class="tag tag--gold"><span lang="en">Current</span><span lang="es">Actual</span></span>
+              </p>
+              <h3 class="bond__title">
+                <span lang="en">Software Engineer at Modyo</span>
+                <span lang="es">Software Engineer en Modyo</span>
+              </h3>
+              <ul class="bond__meta" role="list">
+                <li><span lang="en">Full-time</span><span lang="es">Jornada completa</span></li>
+                <li><span lang="en">Remote (Santiago / Valdivia, Chile)</span><span lang="es">Remoto (Santiago / Valdivia, Chile)</span></li>
+                <li><time datetime="2023-05">2023</time> – <span lang="en">Present</span><span lang="es">Presente</span></li>
+              </ul>
+            </header>
+
+            <h4 class="bond__subtitle"><span lang="en">Achievements</span><span lang="es">Logros</span></h4>
+            <ul class="objectives stagger" lang="en">
+              <li>Developed core functionalities for a CRM/CMS platform using Ruby on Rails and React, focused on complex form builders and configurable workflows.</li>
+              <li>Led the comprehensive refactoring of the roles and permissions system, improving scalability and reducing technical debt.</li>
+              <li>Optimized SQL queries and data access logic to improve response times in high-volume environments.</li>
+              <li>Implemented components using Hotwire (Turbo + Stimulus) to enhance user experience and front-end performance.</li>
+              <li>Integrated third-party APIs for authentication, notifications, and data processing.</li>
+              <li>Developed financial products focusing on automation, traceability, and regulatory compliance.</li>
+              <li>Managed critical bug fixes, dependency updates, and participated in team code reviews.</li>
+            </ul>
+            <ul class="objectives stagger" lang="es">
+              <li>Desarrollé funcionalidades principales de una plataforma CRM/CMS con Ruby on Rails y React, enfocadas en constructores de formularios complejos y flujos de trabajo configurables.</li>
+              <li>Lideré la refactorización integral del sistema de roles y permisos, mejorando la escalabilidad y reduciendo la deuda técnica.</li>
+              <li>Optimicé consultas SQL y la lógica de acceso a datos para mejorar los tiempos de respuesta en entornos de alto volumen.</li>
+              <li>Implementé componentes con Hotwire (Turbo + Stimulus) para mejorar la experiencia de usuario y el rendimiento del front-end.</li>
+              <li>Integré APIs de terceros para autenticación, notificaciones y procesamiento de datos.</li>
+              <li>Desarrollé productos financieros enfocados en automatización, trazabilidad y cumplimiento regulatorio.</li>
+              <li>Gestioné correcciones de bugs críticos y actualizaciones de dependencias, y participé en las revisiones de código del equipo.</li>
+            </ul>
+          </article>
+
+          <section class="block" aria-labelledby="edu-title">
+            <h3 class="block__title" id="edu-title"><span lang="en">Education</span><span lang="es">Educación</span></h3>
+            <div class="edu">
+              <p class="edu__school">Universidad Austral de Chile</p>
+              <p class="edu__degree" lang="en">B.S. in Computer Science (incomplete studies)</p>
+              <p class="edu__degree" lang="es">B.S. en Ciencias de la Computación (estudios incompletos)</p>
+              <p class="edu__years"><time datetime="2018">2018</time> – <time datetime="2022">2022</time></p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- ================= ACHIEVEMENTS ================= -->
+      <section class="panel" id="achievements" aria-labelledby="achievements-title">
+        <header class="panel__head">
+          <p class="panel__index" aria-hidden="true">05</p>
+          <h2 class="panel__title" id="achievements-title" data-echo="Achievements">Achievements</h2>
+          <p class="panel__sub"><span lang="en">Trophy case</span><span lang="es">Vitrina de trofeos</span></p>
+        </header>
+
+        <div class="panel__body">
+          <h3 class="block__title"><span lang="en">Certifications</span><span lang="es">Certificaciones</span></h3>
+          <ul class="trophies stagger" role="list">
+            <li class="trophy trophy--medal">
+              <span class="trophy__art" aria-hidden="true"></span>
+              <span class="trophy__text">
+                <span class="trophy__issuer">EF SET</span>
+                <span class="trophy__name">English Certificate: C2 Proficient</span>
+              </span>
+            </li>
+            <li class="trophy trophy--medal">
+              <span class="trophy__art" aria-hidden="true"></span>
+              <span class="trophy__text">
+                <span class="trophy__issuer">Nate Berkopec</span>
+                <span class="trophy__name">The Complete Guide to Rails Performance</span>
+              </span>
+            </li>
+            <li class="trophy trophy--medal">
+              <span class="trophy__art" aria-hidden="true"></span>
+              <span class="trophy__text">
+                <span class="trophy__issuer">Pragmatic Studio</span>
+                <span class="trophy__name">Hotwire for Rails Developers</span>
+              </span>
+            </li>
+            <li class="trophy trophy--medal">
+              <span class="trophy__art" aria-hidden="true"></span>
+              <span class="trophy__text">
+                <span class="trophy__issuer">Pragmatic Studio</span>
+                <span class="trophy__name">Ruby Blocks &amp; Iterators</span>
+              </span>
+            </li>
+            <li class="trophy trophy--medal trophy--pending">
+              <span class="trophy__art" aria-hidden="true"></span>
+              <span class="trophy__text">
+                <span class="trophy__issuer">AWS</span>
+                <span class="trophy__name">AWS Certified Cloud Practitioner</span>
+                <span class="trophy__status"><span lang="en">In progress</span><span lang="es">En curso</span></span>
+              </span>
+            </li>
+            <li class="trophy trophy--medal trophy--pending">
+              <span class="trophy__art" aria-hidden="true"></span>
+              <span class="trophy__text">
+                <span class="trophy__issuer">AWS</span>
+                <span class="trophy__name">AWS Certified AI Practitioner (AIF-C01)</span>
+                <span class="trophy__status"><span lang="en">In progress</span><span lang="es">En curso</span></span>
+              </span>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="panel" id="contact" aria-labelledby="contact-title">
+        <header class="panel__head">
+          <p class="panel__index" aria-hidden="true">06</p>
+          <h2 class="panel__title" id="contact-title" data-echo="Contact">Contact</h2>
+          <p class="panel__sub"><span lang="en">Open a channel</span><span lang="es">Abre un canal</span></p>
+        </header>
+
+        <div class="panel__body">
+          <ul class="links stagger" role="list">
+            <li>
+              <a class="link-card" href="mailto:maximilianoide82@gmail.com">
+                <span class="link-card__kind">Email</span>
+                <span class="link-card__handle">maximilianoide82@gmail.com</span>
+                <span class="link-card__arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li>
+              <a class="link-card" href="https://github.com/maximilianoide" rel="me noopener" target="_blank">
+                <span class="link-card__kind">GitHub</span>
+                <span class="link-card__handle">@maximilianoide</span>
+                <span class="link-card__arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li>
+              <a class="link-card" href="https://www.linkedin.com/in/maximiliano-ide-471346207/" rel="me noopener" target="_blank">
+                <span class="link-card__kind">LinkedIn</span>
+                <span class="link-card__handle">Maximiliano Ide</span>
+                <span class="link-card__arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li>
+              <a class="link-card" href="https://x.com/maximilianoide" rel="me noopener" target="_blank">
+                <span class="link-card__kind">X</span>
+                <span class="link-card__handle">@maximilianoide</span>
+                <span class="link-card__arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+          </ul>
+          <p class="contact-note">Valdivia, Chile · GMT-4</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="hints">
+      <p class="hints__keys">
+        <span class="hint hint--arrows"><kbd>↑</kbd><kbd>↓</kbd> <span lang="en">Select</span><span lang="es">Elegir</span></span>
+        <span class="hint"><kbd>Enter</kbd> <span lang="en">Confirm</span><span lang="es">Confirmar</span></span>
+        <span class="hint"><kbd>Tab</kbd> <span lang="en">Move</span><span lang="es">Mover</span></span>
+      </p>
+      <p class="hints__copy">© Maximiliano Ide</p>
+    </footer>
+  </div>
+
+  <!-- Mobile: jump back to the full-screen menu -->
+  <a class="to-menu" href="#menu">Menu</a>
+</body>
+</html>

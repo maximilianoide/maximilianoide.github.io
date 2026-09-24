@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 · Maximiliano Ide</title>
+  <meta name="description" content="Page not found — Maximiliano Ide, Software Engineer.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0a1a3f">
+  <meta name="color-scheme" content="dark">
+  <!-- Inline favicon + styles: GitHub Pages serves this file at any missing path, where relative URLs would break -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1a3f'/%3E%3Cpolygon points='22,10 58,10 44,54 8,54' fill='%231e5bff'/%3E%3Cpolygon points='26,17 50,17 40,47 16,47' fill='%233fd0ff'/%3E%3Cpolygon points='30,24 42,24 36,40 24,40' fill='%230a1a3f'/%3E%3Cpolygon points='44,4 60,4 56,14 40,14' fill='%23ff2d55'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@500;700;800&display=swap">
+  <style>
+    @property --spin { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+    @view-transition { navigation: auto; }
+
+    :root {
+      color-scheme: dark;
+      --night: #0a1a3f; --abyss: #050c22; --electric: #1e5bff; --cyan: #3fd0ff;
+      --white: #fff; --accent: #ff2d55; --gold: #ffd23f; --muted: #a9c1ef;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --font-display: "Anton", Impact, "Arial Narrow", sans-serif;
+      --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { background: var(--abyss); }
+    body {
+      margin: 0; min-height: 100dvh; display: grid; place-items: center;
+      padding: 2rem 1rem; overflow-x: clip;
+      font: 500 1rem/1.55 var(--font-body); color: var(--white);
+      background:
+        radial-gradient(110% 80% at 85% 0%, rgb(30 91 255 / 0.5), transparent 60%),
+        linear-gradient(165deg, #10286a, var(--night) 42%, var(--abyss) 88%);
+    }
+    p, h1 { margin: 0; }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+    /* language toggle (radio + :has) */
+    @supports selector(:has(*)) {
+      body:not(:has(#lang-es:checked)) [lang="es"],
+      body:has(#lang-es:checked) [lang="en"] { display: none !important; }
+    }
+    @supports not selector(:has(*)) { [lang="es"], .lang-switch { display: none !important; } }
+
+    .lang-switch { position: fixed; top: 1rem; right: 1rem; display: flex; align-items: center; margin: 0; padding: 0; border: 0; }
+    .lang-switch legend { float: left; margin-right: 0.6rem; padding: 0; font: 700 0.7rem/1 var(--font-body); letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+    .lang-switch input { position: absolute; width: 1px; height: 1px; margin: 0; opacity: 0; }
+    .lang-switch label {
+      position: relative; display: grid; place-items: center; min-width: 3rem; min-height: 2.25rem; padding: 0.3rem 0.9rem;
+      font: italic 400 1.1rem/1 var(--font-display); letter-spacing: 0.06em; cursor: pointer; isolation: isolate;
+    }
+    .lang-switch label::before {
+      content: ""; position: absolute; inset: 0; z-index: -1; background: rgb(30 91 255 / 0.35);
+      clip-path: polygon(0.5rem 0, 100% 0, calc(100% - 0.5rem) 100%, 0 100%);
+    }
+    .lang-switch input:checked + label { color: var(--night); }
+    .lang-switch input:checked + label::before { background: var(--cyan); }
+    .lang-switch input:focus-visible + label { outline: 3px solid var(--gold); outline-offset: 2px; }
+    abbr[title] { text-decoration: none; }
+
+    /* bubbles */
+    .bubbles { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    .bubbles i {
+      position: absolute; bottom: -3rem; left: var(--x); width: calc(var(--s) * 2.4rem); aspect-ratio: 1;
+      border: 1px solid rgb(190 235 255 / 0.5); border-radius: 50%;
+      background: radial-gradient(circle at 32% 30%, rgb(255 255 255 / 0.55), transparent 38%);
+      opacity: 0; animation: bubble var(--d) linear var(--t) infinite;
+    }
+
+    .lost { position: relative; display: grid; justify-items: start; gap: 1rem; max-width: 40rem; rotate: -8deg; }
+    .lost__code {
+      font: italic 400 clamp(7rem, 30vw, 14rem)/0.85 var(--font-display);
+      color: transparent; -webkit-text-stroke: 2px var(--cyan);
+      text-shadow: 0.04em 0.04em 0 rgb(30 91 255 / 0.6);
+      animation: slide 0.7s var(--ease-out) both;
+    }
+    .lost__title {
+      padding: 0.2rem 1.2rem 0.3rem 0.9rem;
+      font: italic 400 clamp(2rem, 8vw, 3.6rem)/1 var(--font-display); text-transform: uppercase;
+      background: var(--accent); clip-path: polygon(0.8rem 0, 100% 0, calc(100% - 0.8rem) 100%, 0 100%);
+      animation: slide 0.7s var(--ease-out) 0.1s both;
+    }
+    .lost__text { max-width: 36ch; font-size: 1.08rem; animation: slide 0.7s var(--ease-out) 0.2s both; }
+    .lost__back {
+      position: relative; display: inline-block; margin-top: 0.5rem; padding: 0.55rem 1.6rem 0.6rem 1.2rem;
+      font: italic 400 1.6rem/1 var(--font-display); text-transform: uppercase; text-decoration: none;
+      color: var(--night); isolation: isolate; animation: slide 0.7s var(--ease-out) 0.3s both;
+    }
+    .lost__back::before {
+      content: ""; position: absolute; inset: 0; z-index: -1;
+      background: conic-gradient(from var(--spin) at 30% 50%, var(--cyan), #c9f1ff, var(--cyan) 40%, var(--electric) 65%, var(--cyan));
+      clip-path: polygon(0.8rem 4%, 100% 0, calc(100% - 0.8rem) 92%, 0 100%);
+      animation: spin 4s linear infinite;
+    }
+    .lost__back:is(:hover, :focus-visible) { animation: beat 1.4s var(--ease-out) infinite; }
+
+    @keyframes bubble {
+      0% { translate: 0 0; opacity: 0; } 10% { opacity: 0.8; } 50% { translate: 1rem -55vh; }
+      90% { opacity: 0.5; } 100% { translate: -0.5rem -115vh; opacity: 0; }
+    }
+    @keyframes slide { from { opacity: 0; transform: translate(-30vw, 10vh) skewX(-20deg); } }
+    @keyframes spin { to { --spin: 360deg; } }
+    @keyframes beat { 0%, 100% { scale: 1; } 15% { scale: 1.07; } 30% { scale: 1; } 45% { scale: 1.04; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .bubbles { display: none; }
+      ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <fieldset class="lang-switch">
+    <legend><span lang="en">Language</span><span lang="es">Idioma</span></legend>
+    <input type="radio" name="lang" id="lang-en" value="en" checked>
+    <label for="lang-en"><abbr title="English">EN</abbr></label>
+    <input type="radio" name="lang" id="lang-es" value="es">
+    <label for="lang-es"><abbr title="Español">ES</abbr></label>
+  </fieldset>
+
+  <div class="bubbles" aria-hidden="true">
+    <i style="--x:8%;  --s:.6; --d:14s; --t:-2s"></i>
+    <i style="--x:22%; --s:1;  --d:19s; --t:-9s"></i>
+    <i style="--x:39%; --s:.4; --d:11s; --t:-5s"></i>
+    <i style="--x:57%; --s:.8; --d:17s; --t:-12s"></i>
+    <i style="--x:73%; --s:.5; --d:13s; --t:-3s"></i>
+    <i style="--x:90%; --s:.9; --d:20s; --t:-7s"></i>
+  </div>
+
+  <main class="lost">
+    <p class="lost__code" aria-hidden="true">404</p>
+    <h1 class="lost__title"><span lang="en">Uncharted zone</span><span lang="es">Zona inexplorada</span></h1>
+    <p class="lost__text" lang="en">This page doesn't exist or has moved. Head back to the main menu.</p>
+    <p class="lost__text" lang="es">Esta página no existe o se movió. Vuelve al menú principal.</p>
+    <a class="lost__back" href="/"><span lang="en">Return to menu</span><span lang="es">Volver al menú</span></a>
+  </main>
+</body>
+</html>
