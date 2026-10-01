@@ -1464,6 +1464,28 @@ kbd {
   background: var(--card);
   border: 1px solid var(--line);
   clip-path: polygon(0.7rem 0, 100% 0, calc(100% - 0.7rem) 100%, 0 100%);
+  position: relative;
+}
+
+/* verified badge: the name links out, stretched over the whole card */
+.trophy__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.trophy__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.trophy:has(.trophy__link):hover {
+  border-color: var(--cyan);
+}
+
+.trophy__link:focus-visible {
+  outline: none;
+  text-decoration: underline;
 }
 
 .trophy__text {
